@@ -11,8 +11,9 @@ RUN apt update && \
     chmod +x bw && \
     mv bw /usr/local/bin/bw && \
     rm -rfv *.zip && \ 
+    apt autoremove -y --purge && apt clean -y && apt autoclean -y && \ 
     chmod +x entrypoint.sh
 
 EXPOSE 8087
 
-CMD ["/entrypoint.sh"]
+CMD ["./entrypoint.sh"]
