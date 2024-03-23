@@ -4,7 +4,7 @@ set -x
 
 bw config server ${BW_HOST} --response
 
-export BW_SESSION=$(bw login ${BW_USER} --passwordenv BW_PASSWORD --raw)
+export BW_SESSION=$(bw login ${BW_USERNAME} --passwordenv BW_PASSWORD --raw)
 
 bw unlock --check --response --nointeraction
 
