@@ -1,6 +1,6 @@
 FROM debian:sid
 
-ENV BW_CLI_VERSION=2023.12.1
+ENV BW_CLI_VERSION=2024.2.1
 
 COPY entrypoint.sh /
 

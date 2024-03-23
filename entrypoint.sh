@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -x
 
 bw config server ${BW_HOST} --response
 
