@@ -1,9 +1,5 @@
 #!/bin/bash
-set -x
-
-printf "username: ${BW_USERNAME}"
-printf "password: ${BW_PASSWORD}"
-printf "host: ${BW_HOST}"
+set -e
 
 bw config server ${BW_HOST} --response --pretty
 
